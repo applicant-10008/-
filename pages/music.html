@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    </head>
+<body>
+    <div class="custom-player">
+        <audio id="myAudio" src="/-/music/Over the Horizon.mp3"></audio> 
+        <button id="playPauseButton">
+            Play
+        </button>
+    </div>
+
+    <script>
+        const audio = document.getElementById('myAudio');
+        const button = document.getElementById('playPauseButton');
+
+        function togglePlayPause() {
+            if (audio.paused) {
+                audio.play();
+                button.textContent = 'Pause';
+            } else {
+                audio.pause();
+                button.textContent = 'Play';
+            }
+        }
+
+        button.addEventListener('click', togglePlayPause);
+    </script>
+    </body>
+</html>
