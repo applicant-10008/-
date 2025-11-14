@@ -1,63 +1,7 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@applicant10008_ Fav Music <style>body {background-color: #757575}</style></title>
-</head>
-<body>
-    <div class="custom-player">
-        <audio id="myAudio" src="/-/music/GIRLS LEGEND U"></audio>
-        
-        <button id="playPauseButton">Play</button>
+<html lang="en">
+    <head><title>@applicant10008_ Fav Music</title><style>body {background-color: #757575}</style></head>
 
-        <input type="range" id="progressBar" value="0" min="0" max="100">
-        <span id="timeDisplay">0:00 / 0:00</span>
-    </div>
-
-    <script>
-        const audio = document.getElementById('myAudio');
-        const playPauseButton = document.getElementById('playPauseButton');
-        const progressBar = document.getElementById('progressBar');
-        const timeDisplay = document.getElementById('timeDisplay');
-
-        function formatTime(seconds) {
-            const minutes = Math.floor(seconds / 60);
-            const remainingSeconds = Math.floor(seconds % 60);
-            const paddedSeconds = remainingSeconds < 10 ? '0' + remainingSeconds : remainingSeconds;
-            return `${minutes}:${paddedSeconds}`;
-        }
-        
-        audio.addEventListener('loadedmetadata', () => {
-            const duration = audio.duration;
-            progressBar.max = duration;
-            timeDisplay.textContent = `0:00 / ${formatTime(duration)}`;
-        });
-
-        audio.addEventListener('timeupdate', () => {
-            const currentTime = audio.currentTime;
-            const duration = audio.duration;
-            
-            progressBar.value = currentTime; 
-            timeDisplay.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
-        });
-
-        progressBar.addEventListener('input', () => {
-            audio.currentTime = progressBar.value; 
-        });
-
-        function togglePlayPause() {
-            if (audio.paused) {
-                audio.play();
-                playPauseButton.textContent = 'Pause';
-            } else {
-                audio.pause();
-                playPauseButton.textContent = 'Play';
-            }
-        }
-
-        playPauseButton.addEventListener('click', togglePlayPause);
-    </script>
-</body>
+<audio controls loop><source src="/-/music/GIRLS LEGEND U.mp3" type="audio/mpeg"></audio>
 
 </html>
