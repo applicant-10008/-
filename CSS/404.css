@@ -1,0 +1,5 @@
+body {background-color: #ff0000}
+
+h1 {animation: blinker 3.8s linear infinite; color: #ffff00; text-align: center;} @keyframes blinker {50% {opacity: 0;}}
+
+p {text-align: center; color: #ffffff;}
