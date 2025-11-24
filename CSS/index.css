@@ -1,6 +1,8 @@
 body {background-color: #131314; text-align: center;}
+
 h1 {text-align: center; color: #d4ff00;}
-a:link {color: #00ff00; }
-a:visited {color:#ff00ff;}
+
+a:link {color: #00ff00; text-decoration: none;}
+a:visited {color:#ff00ff; text-decoration: none;}
 a:hover {color:#ff0000; text-decoration: underline;}
 a:active {color: #131314; text-decoration: underline;}
