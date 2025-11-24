@@ -1,6 +1,5 @@
-body {background-color: #131314}
+body {background-color: #131314; text-align: center;}
 h1 {text-align: center; color: #00ffff;}
-a {text-align: center;}
 a:link {color: lime;}
 a:visited {color:magenta;}
 a:hover {color:cyan;}
