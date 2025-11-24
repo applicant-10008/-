@@ -1,0 +1,6 @@
+body {background-color: #131314}
+h1 {text-align: center; color: #00ffff;}
+a:link {color: lime;}
+a:visited {color:magenta;}
+a:hover {color:cyan;}
+a:active {color: yellow;}
