@@ -1,6 +1,8 @@
 body {background-color: rgb(125, 125, 125); text-align: center; font-family: Arial, sans-serif;}
 h1 {text-align: center; color: #d4ff00;}
 h4 {text-align: center; color: #ff00ff;}
+h3 {text-align: center; color: #00ffff;}
+audio {border-radius: 50px; box-shadow: 0 5px 50px rgb(255, 0, 0);}
 a:link {color: #00ff00; text-decoration: none;}
 a:visited {color:#ff00ff; text-decoration: none;}
 a:hover {color:#ff0000; text-decoration: underline;}
