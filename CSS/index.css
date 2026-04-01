@@ -104,7 +104,7 @@ footer p {
 .social-link.facebook { background-color: #1877F2; }
 .social-link.tiktok { background: linear-gradient(135deg, #69C9D0, #EE1D52); }
 .social-link.reddit { background-color: #FF4500; }
-.social-link.imgbb { background-color: #833ab4; }
+.social-link.imgbb { background-color: #ffffffff; }
 .social-link.github { background-color: #171515; }
 
 /* Responsive */
