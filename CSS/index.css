@@ -2,9 +2,6 @@ body {
     background-color: #121212;
     color: #ffffff;
     font-family: 'consolas', monospace;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
 }
 
 header {
