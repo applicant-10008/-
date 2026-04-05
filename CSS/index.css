@@ -147,12 +147,17 @@ footer p {
 /* Responsive */
 @media (max-width: 600px) {
     .header-inner {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
         text-align: center;
     }
     .profile-card {
         justify-content: center;
-        width: 100%;
+        width: auto;
+        margin-bottom: 1rem;
+    }
+    .header-title {
+        flex: 1 1 100%;
     }
     .header-title h1 {
         font-size: 2rem;
