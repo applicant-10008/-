@@ -26,10 +26,13 @@
 					<h1>Welcome to My Website</h1>
 				</div>
 				<div class="header-audio">
-					<audio controls controlslist="nodownload noremoteplayback" preload="none" loop class="header-audio-player">
+					<audio id="header-audio" preload="none" loop controlslist="nodownload noremoteplayback" class="audio-hidden">
 						<source src="/-/music/Umasugi! Gourmet Parade.mp3" type="audio/mpeg">
 						Your browser does not support the audio element.
 					</audio>
+					<button id="audio-toggle" class="audio-toggle" type="button" aria-label="Play audio">
+						<img src="/-/images/play.svg" alt="Play icon">
+					</button>
 				</div>
 			</div>
 		</header>
@@ -57,8 +60,29 @@
 			</div>
 		</footer>
 		<script>
-			// Prevent right-click on audio player
-			document.querySelector('audio').addEventListener('contextmenu', (e) => {
+			const headerAudio = document.getElementById('header-audio');
+			const audioToggle = document.getElementById('audio-toggle');
+			const audioIcon = audioToggle.querySelector('img');
+
+			audioToggle.addEventListener('click', () => {
+				if (headerAudio.paused) {
+					headerAudio.play();
+					audioIcon.src = '/-/images/pause.svg';
+					audioToggle.setAttribute('aria-label', 'Pause audio');
+				} else {
+					headerAudio.pause();
+					audioIcon.src = '/-/images/play.svg';
+					audioToggle.setAttribute('aria-label', 'Play audio');
+				}
+			});
+
+			headerAudio.addEventListener('ended', () => {
+				audioIcon.src = '/-/images/play.svg';
+				audioToggle.setAttribute('aria-label', 'Play audio');
+			});
+
+			// Prevent right-click on the hidden audio element
+			headerAudio.addEventListener('contextmenu', (e) => {
 				e.preventDefault();
 				return false;
 			});
