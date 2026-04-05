@@ -60,7 +60,6 @@ Connected profiles:
 
 - **HTML5** - Semantic markup
 - **CSS3** - Modern styling with gradients and animations
-- **Google Fonts** - Roboto typeface for clean typography
 
 ## Contributing
 
