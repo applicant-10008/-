@@ -26,6 +26,8 @@
 <link rel="icon" href="/-/favicons/favicon1.ico" type="image/x-icon">
 		<!--style-->
 <link rel="stylesheet" href="/-/CSS/index.css">
+		<!--script-->
+<script src="/-/JS/index.js" defer type="text/javascript"></script>
         <!--Others-->
 <meta name="google-site-verification" content="xQJUoKFrSX7wPXf-duGPNPiWaBKIXh7A_6D4kLM5K2M" />
 	</head>
@@ -80,33 +82,5 @@
 			<hr>
 			<p>Built, Made and Hosted on GitHub</p>
 		</footer>
-		<script>
-			const headerAudio = document.getElementById('header-audio');
-			const audioToggle = document.getElementById('audio-toggle');
-			const audioIcon = audioToggle.querySelector('img');
-
-			audioToggle.addEventListener('click', () => {
-				if (headerAudio.paused) {
-					headerAudio.play();
-					audioIcon.src = '/-/images/pause.svg';
-					audioToggle.setAttribute('aria-label', 'Pause audio');
-				} else {
-					headerAudio.pause();
-					audioIcon.src = '/-/images/play.svg';
-					audioToggle.setAttribute('aria-label', 'Play audio');
-				}
-			});
-
-			headerAudio.addEventListener('ended', () => {
-				audioIcon.src = '/-/images/play.svg';
-				audioToggle.setAttribute('aria-label', 'Play audio');
-			});
-
-			// Prevent right-click on the hidden audio element
-			headerAudio.addEventListener('contextmenu', (e) => {
-				e.preventDefault();
-				return false;
-			});
-		</script>
 	</body>
 </html>
