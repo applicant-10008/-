@@ -1,4 +1,4 @@
-# @applicant10008_ Portfolio Website
+# @applicant10008_ Website Profile
 
 A modern, responsive personal portfolio website featuring biography, music player, and social media links.
 
@@ -6,7 +6,6 @@ A modern, responsive personal portfolio website featuring biography, music playe
 
 - 🎨 **Modern Dark Theme** - Sleek dark interface with smooth transitions
 - 📱 **Fully Responsive** - Optimized for mobile, tablet, and desktop
-- 🔗 **Brand-Aligned Social Icons** - SVG icons with official brand colors
 - ♿ **Accessible** - High contrast, semantic HTML, ARIA labels
 - ⚡ **Lightweight** - Minimal dependencies for fast loading
 
@@ -32,7 +31,6 @@ A modern, responsive personal portfolio website featuring biography, music playe
 ### Homepage
 - Welcome header with biography section
 - Information about the applicant10008 username
-- Embedded audio player with protected content
 - Social media links with hover effects and brand colors
 
 ### 404 Page
@@ -67,4 +65,10 @@ Found an issue or have a suggestion? Please use the [issues tab](https://github.
 
 ## License
 
+All music found in the music folder goes to the original creator:
+```
+Umasugi! Gourmet Parade - Cygames
+GIRLS LENGEND U - Cygames
+Over The Horizon - Samsung
+```
 Personal portfolio project. All rights reserved.
