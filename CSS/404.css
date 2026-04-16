@@ -12,7 +12,7 @@ body {
     align-items: center;
 }
 
-h1 {
+.h1 {
     animation: blinker 3.8s linear infinite;
     color: #ff6b6b;
     font-size: 3rem;
