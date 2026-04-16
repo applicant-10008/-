@@ -51,7 +51,6 @@ Connected profiles:
 - Facebook
 - TikTok
 - Reddit
-- ImgBB
 - GitHub
 
 ## Technologies Used
