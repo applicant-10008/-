@@ -46,6 +46,23 @@ a:hover {
     color: #121212;
 }
 
+.slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 /* Responsive */
 @media (max-width: 600px) {
     h1 {
