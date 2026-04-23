@@ -1,5 +1,5 @@
 body {
-    background-color: #121212;
+    background-color: #1C2526;
     color: #ffffff;
     font-family: 'consolas', monospace;
     text-align: center;
@@ -14,7 +14,7 @@ body {
 
 h1 {
     animation: blinker 3.8s linear infinite;
-    color: #ff6b6b;
+    color: #00FFAB;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
