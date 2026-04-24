@@ -2,7 +2,6 @@ body {
     background-color: #1C2526;
     color: #ffffff;
     font-family: 'consolas', monospace;
-    scroll-behavior: smooth;
 }
 
 header {
