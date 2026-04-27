@@ -164,7 +164,7 @@ footer p {
 .social-link img {
     width: 24px;
     height: 24px;
-    border-radius: 50%;
+    border-radius: 10%;
     filter: brightness(0) invert(1);
 }
 
