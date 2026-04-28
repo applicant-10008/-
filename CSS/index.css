@@ -209,6 +209,16 @@ footer p {
   80%, 100% { content: ''; }
 }
 
+.arrows:after {
+    content: '⇓';
+    animation: donw 1.5s steps(5, end) infinite;
+}
+@keyframes donw {
+    0%, 20% { content: '⇓'; }
+    40% { content: '⇓⇓'; }
+    60% { content: '⇓⇓⇓'; }
+    80%, 100% { content: ''; }
+}
 /* Responsive */
 @media (max-width: 600px) {
     .header-inner {
