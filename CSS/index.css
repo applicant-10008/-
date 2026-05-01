@@ -203,7 +203,7 @@ footer p {
 }
 
 @keyframes dots {
-  0%, 10% { content: '.'; }
+  0%, 20% { content: '.'; }
   20% { content: '..'; }
   40% { content: '...'; }
   60% { content: '..'; }
