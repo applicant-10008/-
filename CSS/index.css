@@ -207,7 +207,8 @@ footer p {
   20% { content: '..'; }
   40% { content: '...'; }
   60% { content: '..'; }
-  80%, 100% {content: '.';}
+  80% { content: '.';}
+ 100% { content: ' ';}
 }
 
 /* Responsive */
