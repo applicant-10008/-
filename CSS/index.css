@@ -10,7 +10,7 @@ header {
 }
 
 main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 2rem 1rem;
 }
@@ -184,6 +184,51 @@ footer p {
 .slide-up {
   animation: slideUp 0.8s ease-out forwards;
   opacity: 0;
+}
+
+.uma-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.uma-card {
+  background: #1a1a1a; 
+  border: 2px solid #00ffcc;
+  border-radius: 10px;
+  width: 200px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.uma-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
+}
+
+.uma-card img {
+  width: 187.5px;
+  height: 350px;
+  object-fit: cover;
+  border-bottom: 2px solid #00ffcc;
+}
+
+.uma-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.uma-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #00ffcc;
+}
+
+.uma-info p {
+  font-size: 0.8rem;
+  color: #ebebeb;
 }
 
 @keyframes slideUp {
