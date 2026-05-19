@@ -6,32 +6,17 @@ A modern, responsive personal portfolio website featuring biography, music playe
 
 - 🎨 **Modern Dark Theme** - Sleek dark interface with smooth transitions
 - 📱 **Fully Responsive** - Optimized for mobile, tablet, and desktop
-- ♿ **Accessible** - High contrast, semantic HTML, ARIA labels
 - ⚡ **Lightweight** - Minimal dependencies for fast loading
 
-## Project Structure
+## Contributing
 
-```
-├── index.html           # Main homepage
-├── 404.html            # Custom 404 error page
-├── README.md           # Project documentation
-├── CSS/
-│   ├── index.css       # Homepage styles
-│   └── 404.css         # 404 page styles
-├── images/
-│   ├── social_media_icons/     # Original icon assets
-│   └── *.svg            # Brand-aligned social icons
-├── music/
-│   └── GIRLS LEGEND U.mp3      # Featured audio track
-└── favicons/           # Website favicons and manifest
-```
+Found an issue or have a suggestion? Please use the [issues tab](https://github.com/applicant-10008/-/issues) and provide as much detail as possible so we can address it quickly.
 
 ## Pages
 
 ### Homepage
 - Welcome header with biography section
 - Information about the applicant10008 username
-- Social media links with hover effects and brand colors
 
 ### 404 Page
 - Custom error page with animated heading
@@ -45,8 +30,6 @@ Connected profiles:
 - Instagram
 - X / Twitter
 - Spotify
-- YouTube
-- Twitch
 - Threads
 - Facebook
 - TikTok
@@ -57,10 +40,6 @@ Connected profiles:
 
 - **HTML5** - Semantic markup
 - **CSS3** - Modern styling with gradients and animations
-
-## Contributing
-
-Found an issue or have a suggestion? Please use the [issues tab](https://github.com/applicant-10008/-/issues) and provide as much detail as possible so we can address it quickly.
 
 ## License
 

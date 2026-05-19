@@ -24,3 +24,14 @@ audioToggle.setAttribute('aria-label', 'Play audio');
 	e.preventDefault();
 	return false;
 	});
+
+const gtagScript = document.createElement('script');
+gtagScript.async = true;
+gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-H4GRHD7XM7';
+document.head.appendChild(gtagScript);
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+
+gtag('js', new Date());
+gtag('config', 'G-H4GRHD7XM7');
