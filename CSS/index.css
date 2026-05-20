@@ -257,7 +257,6 @@ footer p {
  100% { content: ' ';}
 }
 
-/* Responsive */
 @media (max-width: 600px) {
     .header-inner {
         flex-wrap: wrap;
