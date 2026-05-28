@@ -30,15 +30,6 @@ p {
     color: #e0e0e0;
 }
 
-audio {
-    display: block;
-    margin: 1rem auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(255, 107, 107, 0.3);
-    width: 100%;
-    max-width: 400px;
-}
-
 footer {
     text-align: center;
     padding: 2rem 1rem;
@@ -99,43 +90,6 @@ footer p {
     color: #00d4ff;
 }
 
-.header-audio {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    min-width: 240px;
-}
-
-.audio-hidden {
-    display: none;
-}
-
-.audio-toggle {
-    width: 56px;
-    height: 56px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.08);
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
-}
-
-.audio-toggle:hover,
-.audio-toggle:focus-visible {
-    transform: translateY(-1px);
-    background-color: rgba(0, 212, 255, 0.18);
-    outline: none;
-}
-
-.audio-toggle img {
-    width: 28px;
-    height: 28px;
-}
-
 .social-links {
     display: flex;
     justify-content: center;
@@ -180,11 +134,6 @@ footer p {
 .social-link.reddit { background-color: #FF4500; }
 .social-link.imgbb { background-color: rgba(0, 0, 0, 0); }
 .social-link.github { background-color: #171515; }
-
-.slide-up {
-  animation: slideUp 0.8s ease-out forwards;
-  opacity: 0;
-}
 
 .uma-container {
   display: flex;
@@ -231,6 +180,11 @@ footer p {
   color: #ebebeb;
 }
 
+.slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -273,10 +227,6 @@ footer p {
     }
     .header-title h1 {
         font-size: 2rem;
-    }
-    .header-audio {
-        width: 100%;
-        justify-content: center;
     }
     main {
         padding: 1rem;
