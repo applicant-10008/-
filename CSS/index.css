@@ -154,7 +154,7 @@ footer p {
 .uma-card {
   background: #1a1a1a; 
   border: 2px solid #00ffcc;
-  border-radius: 10px;
+  border-radius: 50px;
   width: 200px;
   overflow: hidden;
   transition: transform 0.3s ease;
