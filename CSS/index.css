@@ -28,7 +28,11 @@ section {
 h2 {
     color: #00FFAB;
     border-bottom: 5px outset #00FFAB;
+}
 
+h3{
+    text-align: center;
+    color: #F6E074;
 }
 
 p {
