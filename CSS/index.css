@@ -4,6 +4,7 @@
 }
 
 html, body {
+    margin: 0;
     background-color: #1C2526;
     color: #e0e0e0;
     font-family: Verdana, Geneva, sans-serif;
@@ -34,11 +35,16 @@ h3{
     color: #F6E074;
     text-align: center;
     border-bottom: 2px outset #F6E074;
+    margin: 1.8rem 0 1rem;
 }
 
 p {
     font-size: 1.1rem;
     color: #e0e0e0;
+}
+
+iframe {
+    margin: 1rem 0;
 }
 
 #biography p {
