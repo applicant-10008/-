@@ -155,13 +155,13 @@ footer p {
 .social-link.instagram { background: radial-gradient(circle at 30% 30%, #fdf497 0%, #fcb045 30%, #fd1d1d 60%, #833ab4 100%); }
 .social-link.x { background-color: #1DA1F2; }
 .social-link.spotify { background-color: #1DB954; }
-.social-link.youtube { background-color: #FF0000; }
-.social-link.twitch { background-color: #9146FF; }
+/* .social-link.youtube { background-color: #FF0000; } */
+/* .social-link.twitch { background-color: #9146FF; } */
 .social-link.threads { background-color: #1C1C1E; }
 .social-link.facebook { background-color: #1877F2; }
 .social-link.tiktok { background: linear-gradient(135deg, #69C9D0, #EE1D52); }
 .social-link.reddit { background-color: #FF4500; }
-.social-link.imgbb { background-color: rgba(0, 0, 0, 0); }
+/* .social-link.imgbb { background-color: rgba(0, 0, 0, 0); } */
 .social-link.github { background-color: #171515; }
 
 .uma-container {
@@ -226,7 +226,7 @@ footer p {
   }
 }
 
-.loading:after {
+/* .loading:after {
   content: '.';
   animation: dots 1.5s steps(5, end) infinite;
 }
@@ -239,7 +239,7 @@ footer p {
   60% { content: '..'; }
   80% { content: '.';}
  100% { content: ' ';}
-}
+} */
 
 @media (max-width: 600px) {
     .header-inner {
