@@ -28,7 +28,7 @@ iframe { margin: 1rem 0; }
       z-index: 99;
       border: none;
       outline: none;
-      background-color: ##bddbfa;
+      background-color: rgb(189, 219, 250);
       color: white;
       cursor: pointer;
       padding: 15px 20px;
