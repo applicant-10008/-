@@ -20,6 +20,29 @@ iframe { margin: 1rem 0; }
 
 #biography p { font-weight: bolder; }
 
+#backToTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: ##bddbfa;
+      color: white;
+      cursor: pointer;
+      padding: 15px 20px;
+      border-radius: 50%;
+      font-size: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    #backToTopBtn:hover {
+      background-color: rgba(0, 255, 204, 0.4);
+      transform: translateY(-3px);
+    }
+
 iframe { margin-bottom: 1rem; border: 1px solid rgba(0, 255, 204, 0.4); border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); }
 
 footer { text-align: center; padding: 2rem 1rem; background-color: #1e1e1e; color: #ffffff; }
