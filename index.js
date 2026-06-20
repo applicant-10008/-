@@ -1,6 +1,6 @@
 const backToTopBtn = document.getElementById("backToTopBtn");
     window.onscroll = function() {
-      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 300) {
         backToTopBtn.style.display = "block";
       } else {
         backToTopBtn.style.display = "none";
