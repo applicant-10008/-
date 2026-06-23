@@ -13,4 +13,3 @@ const backToTopBtn = document.getElementById("backToTopBtn");
         behavior: "smooth"
       });
     });
-    
