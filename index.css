@@ -31,8 +31,8 @@ iframe { margin-bottom: 1rem; border: 1px solid rgba(0, 255, 204, 0.4); border-r
 .spotify-embed { background-color: #101515; border: 1px solid rgba(0, 255, 204, 0.25); border-radius: 16px; overflow: hidden; }
 .spotify-placeholder { min-height: 152px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.6rem; padding: 1rem; color: #e0e0e0; text-align: center; }
 .spotify-placeholder p { margin: 0; font-size: 1rem; color: #d4d4d4; }
-.spotify-load-btn { background-color: #1DB954; color: #ffffff; border: none; border-radius: 999px; padding: 0.8rem 1.3rem; cursor: pointer; font-weight: 700; transition: transform 0.2s ease, background-color 0.2s ease; }
-.spotify-load-btn:hover { background-color: #17a34a; transform: translateY(-1px); }
+.spotify-load-btn { background: #1a1a1a; color:#00ffcc; font-size: 1.1rem; border: 2px solid #00ffcc; border-radius: 50px; width: 300px; overflow: hidden; transition: transform 0.3s ease; }
+.spotify-load-btn:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4); }
 /* AS SAID ABOVE, REMOVE IF DOESN'T WORK -------------------------------------*/
 
 footer { text-align: center; padding: 2rem 1rem; background-color: #1e1e1e; color: #ffffff; }
