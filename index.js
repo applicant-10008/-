@@ -21,6 +21,18 @@ spotifyLoadButtons.forEach(button => {
     if (!embed || embed.classList.contains("loaded")) return;
 
     const src = embed.dataset.src;
+    const trackId = src.match(/track\/([^?]+)/)?.[1] || "unknown";
+    const trackName = embed.dataset.track || "Spotify track";
+
+    if (window.gtag) {
+      window.gtag("event", "spotify_player_click", {
+        event_category: "engagement",
+        event_label: trackName,
+        spotify_track: trackId,
+        spotify_track_name: trackName
+      });
+    }
+
     const iframe = document.createElement("iframe");
     iframe.setAttribute("title", "Spotify audio player");
     iframe.setAttribute("src", src);
