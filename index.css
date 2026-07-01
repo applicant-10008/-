@@ -355,7 +355,7 @@ footer p {
         padding: 1rem;
     }
     
-    .spotify-load-btn {
+    .spotify-load-btn,.spotify-placeholder{
         max-width: 100%;
     }
 
