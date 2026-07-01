@@ -330,7 +330,7 @@ footer p {
 
 /*Mobile Responsiveness*/
 
-@media (max-width: 600px) {
+@media (max-width: 100%) {
     .header-inner {
         flex-wrap: wrap;
         justify-content: center;
