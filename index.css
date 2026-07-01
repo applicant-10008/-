@@ -354,6 +354,10 @@ footer p {
     main {
         padding: 1rem;
     }
+    
+    .spotify-load-btn {
+        max-width: 100%;
+    }
 
     .social-links {
         gap: 0.5rem;
