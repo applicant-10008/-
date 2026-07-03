@@ -48,3 +48,20 @@ spotifyLoadButtons.forEach(button => {
     embed.classList.add("loaded");
   });
 });
+
+const socialLinks = document.querySelectorAll(".social-link");
+socialLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    const platform = link.getAttribute("title") || "unknown";
+    const destinationUrl = link.href || "unknown";
+
+    if (window.gtag) {
+      window.gtag("event", "social_media_click", {
+        event_category: "engagement",
+        event_label: platform,
+        social_platform: platform.toLowerCase(),
+        destination_url: destinationUrl
+      });
+    }
+  });
+});
