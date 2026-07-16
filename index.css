@@ -1,5 +1,9 @@
 /* Global Styles */
 
+::root {
+    --accent-badge: #00FFAB;
+}
+
 ::selection {
     background-color: #00FFAB;
     color: #121212;
@@ -308,6 +312,17 @@ footer p {
     font-size: 0.8rem;
     color: #ebebeb;
 }
+
+.badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #e0f2fe;
+      background-color: var(--accent-badge);
+      padding: 0.25rem 0.6rem;
+      border-radius: 9999px;
+      align-self: flex-start;
+    }
 
 /* Animation for fade-in effect */
 
