@@ -1,6 +1,6 @@
 /* Global Styles */
 
-::root {
+:root {
     --accent-badge: #00FFAB;
 }
 
@@ -313,7 +313,7 @@ footer p {
     color: #ebebeb;
 }
 
-.badge p {
+.badge {
       display: inline-block;
       font-size: 0.75rem;
       font-weight: 500;
