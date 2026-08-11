@@ -1,18 +1,16 @@
 const backToTopBtn = document.getElementById("backToTopBtn");
-    window.onscroll = function() {
-      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        backToTopBtn.style.display = "block";
-      } else {
-        backToTopBtn.style.display = "none";
-      }
-    };
-    
-    backToTopBtn.addEventListener("click", function() {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    });
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  backToTopBtn.style.display = scrollTop > 300 ? "block" : "none";
+});
+
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
 
 const spotifyLoadButtons = document.querySelectorAll(".spotify-load-btn");
 spotifyLoadButtons.forEach(button => {

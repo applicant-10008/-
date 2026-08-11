@@ -55,6 +55,10 @@ iframe {
 
 #biography p {
     font-weight: bolder;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(0, 255, 204, 0.4);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 #backToTopBtn {
@@ -80,19 +84,12 @@ iframe {
     transform: translateY(-3px);
 }
 
-iframe {
-    margin-bottom: 1rem;
-    border: 1px solid rgba(0, 255, 204, 0.4);
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
 .spotify-embeds {
     display: grid;
     gap: 1.5rem;
 }
 
-.spotify-embed :hover {
+.spotify-embed:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
 }
@@ -123,7 +120,8 @@ iframe {
     font-size: 1.1rem;
     border: 2px solid #00ffcc;
     border-radius: 50px;
-    width: 300px;
+    width: auto;
+    padding: 0.9rem 1.2rem;
     overflow: hidden;
     transition: transform 0.3s ease;
 }
@@ -143,6 +141,26 @@ footer {
 footer p {
     margin: 0 0 1rem 0;
     font-weight: bold;
+}
+
+.footer-subtitle {
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    color: #d4d4d4;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+
+.social-links li {
+    display: inline-flex;
 }
 
 .header-inner {
@@ -321,10 +339,6 @@ footer p {
       align-self: flex-start;
 }
 
-/*.badge {
-  
-    }*/  
-
 /* Animation for fade-in effect */
 
 .slide-up {
@@ -380,14 +394,3 @@ footer p {
         height: 35px;
     }
 }
-
-/*                                  Unused code                                  
-
-.loading:after { content: '.'; animation: dots 1.5s steps(5, end) infinite; }
-@keyframes dots { 0%  { content: ' ';} 10% { content: '.'; } 20% { content: '..'; } 40% { content: '...'; } 60% { content: '..'; } 80% { content: '.';}100% { content: ' ';} } 
-
-.social-link.youtube { background-color: #FF0000; }
-.social-link.twitch { background-color: #9146FF; }
-.social-link.imgbb { background-color: rgba(0, 0, 0, 0); }
-
-*/
