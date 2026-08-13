@@ -410,6 +410,61 @@ footer p {
       align-self: flex-start;
 }
 
+/* Layout wrapper: make biography section a two-column layout
+   Left: games + characters (the grids we defined)
+   Right: stacked Spotify embeds (1x3) */
+#biography {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    gap: 24px 28px;
+    align-items: start;
+}
+
+/* Force the lists to occupy the left column */
+.game-container, .uma-container {
+    grid-column: 1 / 2;
+}
+
+/* Place Spotify embeds in the right column stacked */
+.spotify-embeds {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: start;
+    margin-top: 8px;
+}
+
+/* Make each spotify embed appear as a compact card and centered */
+.spotify-embed {
+    width: 320px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Equal-height cards: make card a column flexbox so content can stretch uniformly */
+.game-card, .uma-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Give images a stable aspect ratio and let them scale responsively */
+.game-card img, .uma-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 5;
+    object-fit: cover;
+}
+
+/* Push the info area to the bottom so badges align across cards */
+.game-info, .uma-info {
+    margin-top: auto;
+}
+
 /* Responsive improvements */
 .game-card, .uma-card {
         width: 100%;
