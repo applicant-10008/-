@@ -307,6 +307,13 @@ footer p {
     box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
 }
 
+.game-card img {
+    width: 187.5px;
+    height: 350px;
+    object-fit: cover;
+    min-height: 200px;
+}
+
 .uma-card img {
     width: 187.5px;
     height: 350px;
