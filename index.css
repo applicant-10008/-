@@ -86,19 +86,7 @@ iframe {
 
 .spotify-embeds {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 1.5rem;
-    justify-items: center;
-    margin-top: 1rem;
-}
-
-.spotify-embed {
-    width: 320px;
-    max-width: 100%;
-}
-
-.spotify-embed iframe {
-    width: 100% !important;
 }
 
 .spotify-embed:hover {
@@ -298,8 +286,8 @@ footer p {
 /* Game Cards */
 
 .game-container {
-    display: grid;
-    grid-template-columns: repeat(4, 220px);
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
@@ -309,8 +297,7 @@ footer p {
     background: #1a1a1a;
     border: 2px solid #00ffcc;
     border-radius: 50px;
-    width: 100%;
-    max-width: 220px;
+    width: 200px;
     overflow: hidden;
     transition: transform 0.3s ease;
 }
@@ -321,11 +308,12 @@ footer p {
 }
 
 .game-card img {
-    width: 100%;
+    width: 187.5px;
     height: 350px;
     object-fit: cover;
+    min-height: 200px;
     display: block;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .game-info {
@@ -355,8 +343,8 @@ footer p {
 /* UMA Cards */
 
 .uma-container {
-    display: grid;
-    grid-template-columns: repeat(4, 220px);
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
@@ -366,8 +354,7 @@ footer p {
     background: #1a1a1a;
     border: 2px solid #00ffcc;
     border-radius: 50px;
-    width: 100%;
-    max-width: 220px;
+    width: 200px;
     overflow: hidden;
     transition: transform 0.3s ease;
 }
@@ -378,12 +365,11 @@ footer p {
 }
 
 .uma-card img {
-    width: 100%;
+    width: 187.5px;
     height: 350px;
     object-fit: cover;
+    min-height: 200px;
     -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
-    display: block;
-    margin: 0 auto;
 }
 
 .uma-info {
@@ -408,85 +394,6 @@ footer p {
       padding: 0.25rem 0.6rem;
       border-radius: 9999px;
       align-self: flex-start;
-}
-
-/* Layout wrapper: make biography section a two-column layout
-   Left: games + characters (the grids we defined)
-   Right: stacked Spotify embeds (1x3) */
-#biography {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 340px;
-    gap: 24px 28px;
-    align-items: start;
-}
-
-/* Force the lists to occupy the left column */
-.game-container, .uma-container {
-    grid-column: 1 / 2;
-}
-
-/* Place Spotify embeds in the right column stacked */
-.spotify-embeds {
-    grid-column: 2 / 3;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-    justify-content: start;
-    margin-top: 8px;
-}
-
-/* Make each spotify embed appear as a compact card and centered */
-.spotify-embed {
-    width: 320px;
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Equal-height cards: make card a column flexbox so content can stretch uniformly */
-.game-card, .uma-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-/* Give images a stable aspect ratio and let them scale responsively */
-.game-card img, .uma-card img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 3 / 5;
-    object-fit: cover;
-}
-
-/* Push the info area to the bottom so badges align across cards */
-.game-info, .uma-info {
-    margin-top: auto;
-}
-
-/* Responsive improvements */
-.game-card, .uma-card {
-        width: 100%;
-        max-width: 220px;
-}
-.game-container, .uma-container {
-        gap: 1rem;
-}
-@media (max-width: 900px) {
-    .game-container, .uma-container { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 640px) {
-        .header-inner { flex-direction: column; gap: 0.5rem; text-align: center; }
-        .header-title h1 { font-size: 1.6rem; }
-        .game-card, .uma-card { max-width: 100%; }
-        .game-card img, .uma-card img { height: auto; width: 100%; }
-        .header-inner .profile-card { justify-content: center; }
-}
-
-@media (max-width: 420px) {
-    .game-container, .uma-container { grid-template-columns: 1fr; }
-    .spotify-embed { width: 280px; }
 }
 
 /* Animation for fade-in effect */
