@@ -312,6 +312,8 @@ footer p {
     height: 350px;
     object-fit: cover;
     min-height: 200px;
+    display: block;
+    margin: auto;
 }
 
 .game-info {
