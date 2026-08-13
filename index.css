@@ -398,6 +398,23 @@ footer p {
       align-self: flex-start;
 }
 
+/* Responsive improvements */
+.game-card, .uma-card {
+        flex: 1 1 180px;
+        max-width: 220px;
+        width: 100%;
+}
+.game-container, .uma-container {
+        gap: 1rem;
+}
+@media (max-width: 640px) {
+    .header-inner { flex-direction: column; gap: 0.5rem; text-align: center; }
+    .header-title h1 { font-size: 1.6rem; }
+    .game-card, .uma-card { max-width: 48%; }
+    .game-card img, .uma-card img { height: auto; width: 100%; }
+    .header-inner .profile-card { justify-content: center; }
+}
+
 /* Animation for fade-in effect */
 
 .slide-up {
