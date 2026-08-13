@@ -283,6 +283,61 @@ footer p {
     background-color: #171515;
 }
 
+/* Game Cards */
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.game-card {
+    background: #1a1a1a;
+    border: 2px solid #00ffcc;
+    border-radius: 50px;
+    width: 200px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
+}
+
+.game-card img {
+    width: 187.5px;
+    height: 350px;
+    object-fit: cover;
+    min-height: 200px;
+}
+
+.game-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.game-info h4 {
+    margin: 0 0 1.5rem;
+    font-size: 1.1rem;
+    color: #00ffcc;
+}
+
+.game-info p {
+    font-size: 0.8rem;
+    color: #121212;
+      display: inline-block;
+      /*font-size: 0.75rem;*/
+      font-weight: 500;
+      /*color: #121212;*/
+      background-color: var(--accent-badge);
+      padding: 0.25rem 0.6rem;
+      border-radius: 9999px;
+      align-self: flex-start;
+}
+
 /* UMA Cards */
 
 .uma-container {
@@ -305,13 +360,6 @@ footer p {
 .uma-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
-}
-
-.game-card img {
-    width: 187.5px;
-    height: 350px;
-    object-fit: cover;
-    min-height: 200px;
 }
 
 .uma-card img {
