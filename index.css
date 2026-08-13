@@ -9,6 +9,10 @@
     color: #121212;
 }
 
+.hrs{
+  visibility: hidden;
+}
+
 html, body {
     margin: 0;
     background-color: #1C2526;
