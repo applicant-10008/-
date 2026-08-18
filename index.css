@@ -1,457 +1,468 @@
 /* Global Styles */
 
 :root {
-    --accent-badge: #00FFAB;
+  --accent-badge: #00ffab;
 }
 
 ::selection {
-    background-color: #00FFAB;
-    color: #121212;
+  background-color: #00ffab;
+  color: #121212;
 }
 
-.hrs{
+.hrs {
   visibility: hidden;
 }
 
-html, body {
-    margin: 0;
-    background-color: #1C2526;
-    color: #e0e0e0;
-    font-family: Verdana, Geneva, sans-serif;
-    scroll-behavior: smooth;
+html,
+body {
+  margin: 0;
+  background-color: #1c2526;
+  color: #e0e0e0;
+  font-family: Verdana, Geneva, sans-serif;
+  scroll-behavior: smooth;
 }
 
 header {
-    background-color: #1e1e1e;
-    padding: 0.9rem;
+  background-color: #1e1e1e;
+  padding: 0.9rem;
 }
 
 main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
 section {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 h2 {
-    color: #00FFAB;
-    border-bottom: 5px outset #00FFAB;
+  color: #00ffab;
+  border-bottom: 5px outset #00ffab;
 }
 
 h3 {
-    color: #F6E074;
-    text-align: center;
-    border-bottom: 2px outset #F6E074;
-    margin: 1.8rem 0 1rem;
+  color: #f6e074;
+  text-align: center;
+  border-bottom: 2px outset #f6e074;
+  margin: 1.8rem 0 1rem;
 }
 
 p {
-    font-size: 1.1rem;
-    color: #e0e0e0;
+  font-size: 1.1rem;
+  color: #e0e0e0;
 }
 
 iframe {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 #biography p {
-    font-weight: bolder;
-    margin-bottom: 1rem;
-    border: 1px solid rgba(0, 255, 204, 0.4);
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(0, 255, 204, 0.4);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 #backToTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: rgba(189, 219, 250, 0.63);
-    color: white;
-    cursor: pointer;
-    padding: 15px 20px;
-    border-radius: 50%;
-    font-size: 20px;
-    box-shadow: 0 4px 10px rgba(189, 219, 250, 0.63);
-    transition: all 0.3s ease;
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(189, 219, 250, 0.63);
+  color: white;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 50%;
+  font-size: 20px;
+  box-shadow: 0 4px 10px rgba(189, 219, 250, 0.63);
+  transition: all 0.3s ease;
 }
 
 #backToTopBtn:hover {
-    background-color: rgba(0, 255, 204, 0.4);
-    transform: translateY(-3px);
+  background-color: rgba(0, 255, 204, 0.4);
+  transform: translateY(-3px);
 }
 
 .spotify-embeds {
-    display: grid;
-    gap: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
 }
 
 .spotify-embed:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
 }
 
 .spotify-placeholder {
-    border-radius: 9999px;
-    background: #40404038;
-    min-height: 152px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.6rem;
-    padding: 1rem;
-    color: #e0e0e0;
-    text-align: center;
+  border-radius: 9999px;
+  background: #40404038;
+  min-height: 152px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1rem;
+  color: #e0e0e0;
+  text-align: center;
 }
 
 .spotify-placeholder p {
-    margin: 0;
-    font-size: 1rem;
-    color: #d4d4d4;
+  margin: 0;
+  font-size: 1rem;
+  color: #d4d4d4;
 }
 
 .spotify-load-btn {
-    background: #1a1a1a;
-    color: #00ffcc;
-    font-size: 1.1rem;
-    border: 2px solid #00ffcc;
-    border-radius: 50px;
-    width: auto;
-    padding: 0.9rem 1.2rem;
-    overflow: hidden;
-    transition: transform 0.3s ease;
+  background: #1a1a1a;
+  color: #00ffcc;
+  font-size: 1.1rem;
+  border: 2px solid #00ffcc;
+  border-radius: 50px;
+  width: auto;
+  padding: 0.9rem 1.2rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
 .spotify-load-btn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
 }
 
 footer {
-    text-align: center;
-    padding: 2rem 1rem;
-    background-color: #1e1e1e;
-    color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #1e1e1e;
+  color: #ffffff;
 }
 
 footer p {
-    margin: 0 0 1rem 0;
-    font-weight: bold;
+  margin: 0 0 1rem 0;
+  font-weight: bold;
 }
 
 .footer-subtitle {
-    margin: 0 0 1rem;
-    font-size: 1rem;
-    color: #d4d4d4;
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  color: #d4d4d4;
 }
 
 .social-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    list-style: none;
-    padding: 0;
-    margin: 0 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
 }
 
 .social-links li {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .header-inner {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 0 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 1rem;
 }
 
 .header-title h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    color: #00d4ff;
+  margin: 0;
+  font-size: 2.5rem;
+  color: #00d4ff;
 }
 
 /* Profile Card */
 
 .profile-card {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 0.75rem 1rem;
-    border-radius: 18px;
-    background-color: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .profile-avatar {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #F6E074;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f6e074;
 }
 
 .profile-name {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #00d4ff;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #00d4ff;
 }
 
 .profile-role {
-    margin: 0.2rem 0 0;
-    font-size: 0.95rem;
-    color: #d4d4d4;
-    line-height: 1.3;
+  margin: 0.2rem 0 0;
+  font-size: 0.95rem;
+  color: #d4d4d4;
+  line-height: 1.3;
 }
 
 /* Social Links */
 
 .social-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.8rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
 }
 
 .social-link {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #2f2f2f;
-    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.25);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2f2f2f;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.25);
 }
 
 .social-link:hover {
-    transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 .social-link img {
-    width: 24px;
-    height: 24px;
-    border-radius: 10%;
-    filter: brightness(0) invert(1);
+  width: 24px;
+  height: 24px;
+  border-radius: 10%;
+  filter: brightness(0) invert(1);
 }
 
 .social-link.discord {
-    background-color: #5865F2;
+  background-color: #5865f2;
 }
 
 .social-link.instagram {
-    background: radial-gradient(circle at 30% 30%, #fdf497 0%, #fcb045 30%, #fd1d1d 60%, #833ab4 100%);
+  background: radial-gradient(
+    circle at 30% 30%,
+    #fdf497 0%,
+    #fcb045 30%,
+    #fd1d1d 60%,
+    #833ab4 100%
+  );
 }
 
 .social-link.x {
-    background-color: #1DA1F2;
+  background-color: #1da1f2;
 }
 
 .social-link.spotify {
-    background-color: #1DB954;
+  background-color: #1db954;
 }
 
 .social-link.threads {
-    background-color: #1C1C1E;
+  background-color: #1c1c1e;
 }
 
 .social-link.facebook {
-    background-color: #1877F2;
+  background-color: #1877f2;
 }
 
 .social-link.tiktok {
-    background: linear-gradient(135deg, #69C9D0, #EE1D52);
+  background: linear-gradient(135deg, #69c9d0, #ee1d52);
 }
 
 .social-link.reddit {
-    background-color: #FF4500;
+  background-color: #ff4500;
 }
 
 .social-link.github {
-    background-color: #171515;
+  background-color: #171515;
 }
 
 /* Game Cards */
 
 .game-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .game-card {
-    background: #1a1a1a;
-    border: 2px solid #00ffcc;
-    border-radius: 50px;
-    width: 200px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
+  background: #1a1a1a;
+  border: 2px solid #00ffcc;
+  border-radius: 50px;
+  width: 200px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
 .game-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
 }
 
 .game-card img {
-    width: 187.5px;
-    height: 350px;
-    object-fit: cover;
-    min-height: 200px;
-    display: block;
-    margin: auto;
+  width: 187.5px;
+  height: 350px;
+  object-fit: cover;
+  min-height: 200px;
+  display: block;
+  margin: auto;
 }
 
 .game-info {
-    padding: 10px;
-    text-align: center;
+  padding: 10px;
+  text-align: center;
 }
 
 .game-info h4 {
-    margin: 0 0 1.5rem;
-    font-size: 1.1rem;
-    color: #00ffcc;
+  margin: 0 0 1.5rem;
+  font-size: 1.1rem;
+  color: #00ffcc;
 }
 
 .game-info p {
-    font-size: 0.8rem;
-    color: #121212;
-      display: inline-block;
-      /*font-size: 0.75rem;*/
-      font-weight: 500;
-      /*color: #121212;*/
-      background-color: var(--accent-badge);
-      padding: 0.25rem 0.6rem;
-      border-radius: 9999px;
-      align-self: flex-start;
+  font-size: 0.8rem;
+  color: #121212;
+  display: inline-block;
+  /*font-size: 0.75rem;*/
+  font-weight: 500;
+  /*color: #121212;*/
+  background-color: var(--accent-badge);
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  align-self: flex-start;
 }
 
 /* UMA Cards */
 
 .uma-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .uma-card {
-    background: #1a1a1a;
-    border: 2px solid #00ffcc;
-    border-radius: 50px;
-    width: 200px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
+  background: #1a1a1a;
+  border: 2px solid #00ffcc;
+  border-radius: 50px;
+  width: 200px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
 .uma-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
 }
 
 .uma-card img {
-    width: 187.5px;
-    height: 350px;
-    object-fit: cover;
-    min-height: 200px;
-    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  width: 187.5px;
+  height: 350px;
+  object-fit: cover;
+  min-height: 200px;
+  -webkit-box-reflect: below 0px
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 }
 
 .uma-info {
-    padding: 10px;
-    text-align: center;
+  padding: 10px;
+  text-align: center;
 }
 
 .uma-info h4 {
-    margin: 0 0 1.5rem;
-    font-size: 1.1rem;
-    color: #00ffcc;
+  margin: 0 0 1.5rem;
+  font-size: 1.1rem;
+  color: #00ffcc;
 }
 
 .uma-info p {
-    font-size: 0.8rem;
-    color: #121212;
-      display: inline-block;
-      /*font-size: 0.75rem;*/
-      font-weight: 500;
-      /*color: #121212;*/
-      background-color: var(--accent-badge);
-      padding: 0.25rem 0.6rem;
-      border-radius: 9999px;
-      align-self: flex-start;
+  font-size: 0.8rem;
+  color: #121212;
+  display: inline-block;
+  /*font-size: 0.75rem;*/
+  font-weight: 500;
+  /*color: #121212;*/
+  background-color: var(--accent-badge);
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  align-self: flex-start;
 }
 
 /* Animation for fade-in effect */
 
 .slide-up {
-    animation: slideUp 0.8s ease-out forwards;
-    opacity: 0;
+  animation: slideUp 0.8s ease-out forwards;
+  opacity: 0;
 }
 
 @keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*Mobile Responsiveness*/
 
 @media (max-width: 600px) {
-    .header-inner {
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-    }
+  .header-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
 
-    .profile-card {
-        justify-content: center;
-        width: auto;
-        margin-bottom: 1rem;
-    }
+  .profile-card {
+    justify-content: center;
+    width: auto;
+    margin-bottom: 1rem;
+  }
 
-    .header-title {
-        flex: 1 1 100%;
-    }
+  .header-title {
+    flex: 1 1 100%;
+  }
 
-    .header-title h1 {
-        font-size: 2rem;
-    }
+  .header-title h1 {
+    font-size: 2rem;
+  }
 
-    main {
-        padding: 1rem;
-    }
+  main {
+    padding: 1rem;
+  }
 
-    .social-links {
-        gap: 0.5rem;
-    }
+  .social-links {
+    gap: 0.5rem;
+  }
 
-    .social-links img {
-        width: 35px;
-        height: 35px;
-    }
+  .social-links img {
+    width: 35px;
+    height: 35px;
+  }
 }
