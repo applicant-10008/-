@@ -9,10 +9,6 @@
   color: #121212;
 }
 
-.hrs {
-  visibility: hidden;
-}
-
 html,
 body {
   margin: 0;
@@ -92,11 +88,6 @@ iframe {
 .spotify-embeds {
   display: grid;
   gap: 1.5rem;
-}
-
-.spotify-embed:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
 }
 
 .spotify-placeholder {
