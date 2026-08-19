@@ -193,7 +193,6 @@ footer p {
 	margin: 0;
 	list-style-type: none;
 	z-index: 15;
-	width: fit-content;
 	margin-left: auto;
 	margin-right: auto;
 }
