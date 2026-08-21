@@ -60,6 +60,20 @@ iframe {
 	margin: 1rem 0;
 }
 
+footer {
+	text-align: center;
+	padding: 2rem 1rem;
+	background-color: #1e1e1e;
+	color: #ffffff;
+}
+
+footer p {
+	margin: 0 0 1rem 0;
+	font-weight: bold;
+}
+
+/* Biography Section */
+
 #biography p {
 	font-weight: bolder;
 	margin-bottom: 1rem;
@@ -92,9 +106,13 @@ iframe {
 	transform: translateY(-3px);
 }
 
+/* Spotify Embeds Section */
+
 .spotify-embeds {
 	display: grid;
 	gap: 1.5rem;
+	list-style-type: none;
+	padding: 0;
 }
 
 .spotify-placeholder {
@@ -134,17 +152,6 @@ iframe {
 	box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
 }
 
-footer {
-	text-align: center;
-	padding: 2rem 1rem;
-	background-color: #1e1e1e;
-	color: #ffffff;
-}
-
-footer p {
-	margin: 0 0 1rem 0;
-	font-weight: bold;
-}
 
 .footer-subtitle {
 	margin: 0 0 1rem;
