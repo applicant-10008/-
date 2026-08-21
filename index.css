@@ -47,7 +47,6 @@ h2 {
 h3 {
 	color: #f6e074;
 	text-align: center;
-	border-bottom: 2px outset #f6e074;
 	margin: 1.8rem 0 1rem;
 }
 
@@ -377,7 +376,7 @@ summary {
 	text-align: center;
 }
 
-.game-info h4 {
+.game-info h3 {
 	margin: 0 0 1.5rem;
 	font-size: 1.1rem;
 	color: #00ffcc;
@@ -433,7 +432,7 @@ summary {
 	text-align: center;
 }
 
-.uma-info h4 {
+.uma-info h3 {
 	margin: 0 0 1.5rem;
 	font-size: 1.1rem;
 	color: #00ffcc;
