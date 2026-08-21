@@ -376,6 +376,7 @@ summary {
 	min-height: 200px;
 	display: block;
 	margin: auto;
+	cursor: none;
 }
 
 .game-info {
@@ -431,6 +432,7 @@ summary {
 	object-fit: cover;
 	min-height: 200px;
 	-webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+	cursor: none;
 }
 
 .uma-info {
