@@ -1,3 +1,10 @@
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'G-H4GRHD7XM7');
+
+
+
 const backToTopBtn = document.getElementById("backToTopBtn");
 if (backToTopBtn) {
   window.addEventListener("scroll", () => {
