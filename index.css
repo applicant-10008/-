@@ -12,7 +12,7 @@
 html,
 body {
 	margin: 0;
-	background-color: #1c2526;
+	background: linear-gradient(115deg, #0f172a, #1c2526, #00d4ff17, #00ffab52);
 	color: #e0e0e0;
 	font-family: Verdana, Geneva, sans-serif;
 	scroll-behavior: smooth;
@@ -20,7 +20,7 @@ body {
 }
 
 header {
-	background-color: #1e1e1e;
+	background-color: linear-gradient(#0f172a);
 	padding: 0.9rem;
 }
 
@@ -63,7 +63,7 @@ iframe {
 footer {
 	text-align: center;
 	padding: 2rem 1rem;
-	background-color: #1e1e1e;
+	background-color: linear-gradient(#00ffab52);
 	color: #ffffff;
 }
 
@@ -117,7 +117,7 @@ footer p {
 
 .spotify-placeholder {
 	border-radius: 9999px;
-	background: #40404038;
+	background: #4040402b;
 	min-height: 152px;
 	display: flex;
 	flex-direction: column;
