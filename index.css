@@ -184,7 +184,7 @@ footer p {
 }
 
 .section-inner {
-	border-radius: 9999px;
+	border-radius: 12px;
 	max-width: 800px;
 	margin: 0 auto;
 	display: flex;
@@ -249,7 +249,7 @@ summary {
 .profile-avatar {
 	width: 64px;
 	height: 64px;
-	border-radius: 50%;
+	border-radius: 25%;
 	object-fit: cover;
 	border: 2px solid #f6e074;
 }
@@ -280,7 +280,7 @@ summary {
 .social-link {
 	width: 44px;
 	height: 44px;
-	border-radius: 50%;
+	border-radius: 15%;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -295,7 +295,10 @@ summary {
 
 .social-link:hover {
 	transform: translateY(-2px) scale(1.05);
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+	box-shadow: 0 5px 15px rgb(0 0 0);
+	border: 2px solid #00ffcc;
+	border-radius: 15%;
+	
 }
 
 .social-link img {
@@ -512,4 +515,26 @@ summary {
 		width: 35px;
 		height: 35px;
 	}
+
+	.section-inner {
+	max-width: 800px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 0 1rem;
+	background-color: #424242a2;
+	position: sticky;
+	top: 0;
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	z-index: 15;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 }
