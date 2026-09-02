@@ -1,34 +1,41 @@
-# @applicant10008_ Website Profile
+# Website Profile
 
-A modern, responsive personal portfolio website featuring biography, music player, and social media links.
+A lightweight, responsive personal profile website for `@applicant10008_`, featuring a biography, favorite games, favorite *Umamusume* characters, Spotify embeds, and social media links.
 
-## Features
+## 🔧 Features 🔧
 
-- 🎨 **Modern Dark Theme** - Sleek dark interface with smooth transitions
-- 📱 **Fully Responsive** - Optimized for mobile, tablet, and desktop
-- ⚡ **Lightweight** - Minimal dependencies for fast loading
+- Responsive layout for mobile, tablet, and desktop screens
+- Dark visual theme with CSS gradients and animations
+- Biography and profile information
+- Favorite game and *Umamusume* character galleries
+- On-demand Spotify players
+- Social media links
+- Custom 404 page
+- No build tools or third-party packages required
 
-## Contributing
+## 📑 Pages 📑
 
-Found an issue or have a suggestion? Please use the [issues tab](https://github.com/applicant-10008/-/issues) and provide as much detail as possible so we can address it quickly.
+### 📄 Homepage 📄
 
-## Pages
-
-### Homepage
 - Welcome header with biography section
-- Information about the applicant10008 username
+- Information about the `@applicant10008_` username
+- Favorite games and *Umamusume* character highlights
+- Spotify music embed section
+- Social media section
 
-### 404 Page
+### 📄 404 Page 📄
+
 - Custom error page with animated heading
 - "Go back to Home" link for easy navigation
-- Maintains consistent branding with homepage
+- Consistent branding with the homepage
 
-## Social Media Links
+## 🔗 Social Media Links  🔗
 
 Connected profiles:
+
 - Discord
 - Instagram
-- X / Twitter
+- X (Twitter)
 - Spotify
 - Threads
 - Facebook
@@ -36,17 +43,34 @@ Connected profiles:
 - Reddit
 - GitHub
 
-## Technologies Used
+## 🛠️ Technologies 🛠️
 
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with gradients and animations
+- HTML5
+- CSS3
+- JavaScript
+- Spotify embeds
 
-## License
+## 📮 Contributing 📮
 
-All music found in the music folder goes to the original creator:
-```
-Umasugi! Gourmet Parade - Cygames
-GIRLS LENGEND U - Cygames
-Over The Horizon - Samsung
-```
-Personal portfolio project. All rights reserved.
+Found an issue or have a suggestion? Please use the [issues tab](https://github.com/applicant-10008/-/issues) and provide as much detail as possible so it can be addressed quickly.
+
+## ⚙️ Copyright and Third-Party Content ⚙️
+
+© 2026 applicant-10008. All rights reserved for the original website source code, layout, and content created by this repository owner.
+
+This project is a personal fan page and is not affiliated with, endorsed by, or sponsored by the original rights holders of the games, characters, music, or social media platforms shown here.
+
+The following assets belong to their original creators or copyright holders:
+
+- All *Umamusume* characters, artwork, and songs - Cygames
+- Zenless Zone Zero and Honkai: Star Rail images - miHoYo / HoYoverse
+- Splatoon 2, Splatoon 3, and Tetris 99 images - Nintendo
+- Asphalt Legends images - Gameloft
+- Burnout Paradise Remastered images - Electronic Arts (EA)
+- Social media icons and platform branding - their respective companies
+
+All trademarks, logos, game titles, character art, music, and images remain the property of their respective owners.
+
+## 📜 License 📜
+
+This repository is maintained by applicant-10008. The original source code and website design are owned by the repository owner. All third-party media, including images, music, logos, and icons, remain the property of their original owners.
