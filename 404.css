@@ -1,3 +1,22 @@
+:root {
+	--accent-badge: #00ffab;
+}
+
+::selection {
+	background-color: #089063;
+	color: #ffffff;
+}
+
+html,
+body {
+	margin: 0;
+	background: linear-gradient(115deg, #0f172a, #1c2526, #00d4ff17, #00ffab52);
+	color: #e0e0e0;
+	font-family: Verdana, Geneva, sans-serif;
+	scroll-behavior: smooth;
+	scroll-padding-top: 100px;
+}
+
 body {
     background-color: #1C2526;
     color: #ffffff;
