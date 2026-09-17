@@ -1,7 +1,3 @@
-:root {
-	--accent-badge: #00ffab;
-}
-
 ::selection {
 	background-color: #089063;
 	color: #ffffff;
@@ -17,10 +13,7 @@ body {
 	scroll-padding-top: 100px;
 }
 
-body {
-    background-color: #1C2526;
-    color: #ffffff;
-     font-family: Verdana;
+.body-style {
     text-align: center;
     margin: 0;
     padding: 2rem;
