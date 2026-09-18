@@ -1,7 +1,13 @@
+::selection {
+	background-color: #089063;
+	color: #ffffff;
+}
+
 body {
-    background-color: #1C2526;
+    background-color: #0f172a;
+    background: linear-gradient(115deg, #0f172a 0%, #1c2526 45%, #087f93 75%, #00a879 100%);
     color: #ffffff;
-     font-family: Verdana;
+    font-family: Verdana, Geneva, sans-serif;
     text-align: center;
     margin: 0;
     padding: 2rem;
@@ -13,10 +19,9 @@ body {
 }
 
 h1 {
-    animation: blinker 3.8s linear infinite;
+    animation: blinker 4s linear infinite;
     color: #00FFAB;
     font-size: 3rem;
-    margin-bottom: 1rem;
 }
 
 @keyframes blinker {
@@ -25,25 +30,31 @@ h1 {
 
 p {
     font-size: 1.2rem;
+    font-weight: bold;
     color: #e0e0e0;
     max-width: 600px;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    line-height: 1.8;
 }
 
 a {
-    color: #00d4ff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    padding: 0.5rem 1rem;
-    border: 2px solid #00d4ff;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+	background: #1a1a1a;
+	color: #00ffcc;
+	font-size: 1.1rem;
+    font-weight:bold;
+	border: 2px solid #00ffcc;
+	border-radius: 50px;
+	width: auto;
+	padding: 0.9rem 1.2rem;
+	overflow: hidden;
+	transition: transform 0.3s ease;
+	cursor: pointer;
+    text-decoration:none;
 }
 
 a:hover {
-    background-color: #00d4ff;
-    color: #121212;
+	transform: translateY(-5px);
+	box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
 }
 
 
