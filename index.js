@@ -13,6 +13,22 @@ if (siteVersion && updateNotice && refreshForUpdate && dismissUpdate) {
   let dismissedVersion = "";
   let checkingForUpdates = false;
 
+  const isNewerVersion = (candidate, current) => {
+    const candidateParts = candidate.split(".").map(Number);
+    const currentParts = current.split(".").map(Number);
+
+    if ([...candidateParts, ...currentParts].some(part => !Number.isInteger(part))) return false;
+
+    for (let index = 0; index < Math.max(candidateParts.length, currentParts.length); index++) {
+      const candidatePart = candidateParts[index] || 0;
+      const currentPart = currentParts[index] || 0;
+
+      if (candidatePart !== currentPart) return candidatePart > currentPart;
+    }
+
+    return false;
+  };
+
   const checkForUpdates = async () => {
     if (checkingForUpdates || document.visibilityState !== "visible") return;
 
@@ -29,7 +45,7 @@ if (siteVersion && updateNotice && refreshForUpdate && dismissUpdate) {
       const latestDocument = new DOMParser().parseFromString(latestHtml, "text/html");
       latestVersion = latestDocument.querySelector('meta[name="site-version"]')?.content || "";
 
-      const hasNewerVersion = Number(latestVersion) > Number(siteVersion);
+      const hasNewerVersion = isNewerVersion(latestVersion, siteVersion);
       updateNotice.hidden = !hasNewerVersion || latestVersion === dismissedVersion;
     } catch {
       updateNotice.hidden = true;

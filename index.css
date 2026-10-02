@@ -715,10 +715,13 @@ summary {
 
 	.header-title {
 		flex: 1 1 100%;
+		min-width: 0;
+		max-width: 100%;
 	}
 
 	.header-title h1 {
 		font-size: 2rem;
+		overflow-wrap: anywhere;
 	}
 
 	main {
@@ -734,4 +737,10 @@ summary {
 		height: 35px;
 	}
 
+}
+
+@media (max-width: 360px) {
+	.header-title h1 {
+		font-size: 1.3rem;
+	}
 }
