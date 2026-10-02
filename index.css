@@ -110,6 +110,62 @@ footer p {
 	transform: translateY(-3px);
 }
 
+/* Update Notice Styles */
+.update-notice {
+	position: fixed;
+	left: 50%;
+	bottom: 1rem;
+	transform: translateX(-50%);
+	box-sizing: border-box;
+	width: min(38rem, calc(100% - 2rem));
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 0.75rem 1rem;
+	background: #1c2526;
+	border: 1px solid #00d4ff;
+	border-radius: 10px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+	z-index: 30;
+}
+
+.update-notice[hidden] {
+	display: none;
+}
+
+.update-notice-actions {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.update-notice button {
+	min-height: 2.75rem;
+	padding: 0.5rem 0.75rem;
+	color: #00d4ff;
+	background: #121212;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.update-notice button:hover {
+	color: #121212;
+	background: #00d4ff;
+}
+
+.update-notice button:focus-visible {
+	outline: 3px solid #f6e074;
+	outline-offset: 2px;
+}
+
+.update-notice #dismissUpdate {
+	width: 2.75rem;
+	padding: 0;
+	font-size: 1.25rem;
+}
+
 /* Spotify Embeds Section */
 
 .spotify-embeds {

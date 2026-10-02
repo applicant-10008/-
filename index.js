@@ -3,6 +3,60 @@ function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 gtag('config', 'G-H4GRHD7XM7');
 
+const siteVersion = document.querySelector('meta[name="site-version"]')?.content;
+const updateNotice = document.getElementById("updateNotice");
+const refreshForUpdate = document.getElementById("refreshForUpdate");
+const dismissUpdate = document.getElementById("dismissUpdate");
+
+if (siteVersion && updateNotice && refreshForUpdate && dismissUpdate) {
+  let latestVersion = "";
+  let dismissedVersion = "";
+  let checkingForUpdates = false;
+
+  const checkForUpdates = async () => {
+    if (checkingForUpdates || document.visibilityState !== "visible") return;
+
+    checkingForUpdates = true;
+
+    try {
+      const checkUrl = new URL(window.location.href);
+      checkUrl.searchParams.set("_update_check", Date.now().toString());
+
+      const response = await fetch(checkUrl, { cache: "no-store" });
+      if (!response.ok) return;
+
+      const latestHtml = await response.text();
+      const latestDocument = new DOMParser().parseFromString(latestHtml, "text/html");
+      latestVersion = latestDocument.querySelector('meta[name="site-version"]')?.content || "";
+
+      updateNotice.hidden = !latestVersion || latestVersion === siteVersion || latestVersion === dismissedVersion;
+    } catch {
+      updateNotice.hidden = true;
+    } finally {
+      checkingForUpdates = false;
+    }
+  };
+
+  refreshForUpdate.addEventListener("click", () => {
+    if (!latestVersion) return;
+
+    const refreshUrl = new URL(window.location.href);
+    refreshUrl.searchParams.set("_version", latestVersion);
+    window.location.replace(refreshUrl);
+  });
+
+  dismissUpdate.addEventListener("click", () => {
+    dismissedVersion = latestVersion;
+    updateNotice.hidden = true;
+  });
+
+  checkForUpdates();
+  window.setInterval(checkForUpdates, 5 * 60 * 1000);
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") checkForUpdates();
+  });
+}
+
 const navigation = document.querySelector(".section-inner");
 const navigationToggle = document.getElementById("navToggle");
 const navigationLinks = document.getElementById("navLinks");

@@ -10,6 +10,7 @@ A lightweight, responsive personal profile website for `@applicant10008_`, featu
 - Favorite game and *Umamusume* character galleries
 - On-demand Spotify players
 - Social media links
+- Update notice when a newer site version is published
 - Custom 404 page
 - No build tools or third-party packages required
 
