@@ -410,7 +410,7 @@ summary {
 	box-shadow: 0 5px 15px rgb(0 0 0);
 	border: 2px solid #00ffcc;
 	border-radius: 15%;
-	
+
 }
 
 .social-link img {
@@ -618,6 +618,11 @@ summary {
 		overflow-y: hidden;
 		white-space: nowrap;
 	}
+
+	#navToggle {
+		display: none;
+	}
+
 
 	.section-inner.is-collapsed {
 		width: 100%;
