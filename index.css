@@ -611,6 +611,7 @@ summary {
 		max-width: none;
 		flex-direction: row;
 		align-items: center;
+		gap: 0.25rem;
 		padding: 0.25rem;
 		border-radius: 0;
 		overflow-x: auto;
@@ -628,12 +629,8 @@ summary {
 	}
 
 	.nav-links {
-		flex-direction: row;
 		flex: 0 0 auto;
-	}
-
-	.section-inner.is-collapsed .nav-links {
-		display: none;
+		flex-direction: row;
 	}
 
 	.section-inner a {

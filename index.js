@@ -23,14 +23,6 @@ if (navigation && navigationToggle && navigationLinks) {
   navigationToggle.addEventListener("click", () => {
     setNavigationCollapsed(!navigation.classList.contains("is-collapsed"));
   });
-
-  navigationLinks.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      if (window.matchMedia("(max-width: 900px)").matches) {
-        setNavigationCollapsed(true, true);
-      }
-    });
-  });
 }
 
 
