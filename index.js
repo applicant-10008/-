@@ -29,7 +29,8 @@ if (siteVersion && updateNotice && refreshForUpdate && dismissUpdate) {
       const latestDocument = new DOMParser().parseFromString(latestHtml, "text/html");
       latestVersion = latestDocument.querySelector('meta[name="site-version"]')?.content || "";
 
-      updateNotice.hidden = !latestVersion || latestVersion === siteVersion || latestVersion === dismissedVersion;
+      const hasNewerVersion = Number(latestVersion) > Number(siteVersion);
+      updateNotice.hidden = !hasNewerVersion || latestVersion === dismissedVersion;
     } catch {
       updateNotice.hidden = true;
     } finally {
