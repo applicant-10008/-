@@ -200,8 +200,6 @@ footer p {
 	justify-content: flex-start;
 	gap: 1rem;
 	padding: 1rem;
-	background-color: #424242a2;
-	overflow-y: auto;
 	z-index: 15;
 	border-radius: 0 12px 12px 0;
 }
@@ -619,6 +617,7 @@ summary {
 		border-radius: 0;
 		overflow-x: auto;
 		overflow-y: hidden;
+		background-color: #424242a2;
 		white-space: nowrap;
 	}
 
