@@ -52,7 +52,7 @@ if (siteVersion && updateNotice && refreshForUpdate && dismissUpdate) {
   });
 
   checkForUpdates();
-  window.setInterval(checkForUpdates, 5 * 60 * 1000);
+  window.setInterval(checkForUpdates, 2 * 60 * 1000);
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "visible") checkForUpdates();
   });
