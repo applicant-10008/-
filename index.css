@@ -231,6 +231,7 @@ footer p {
 	outline-offset: 2px;
 }
 
+/*
 .nav-toggle-icon,
 .nav-toggle-icon::before,
 .nav-toggle-icon::after {
@@ -257,6 +258,8 @@ footer p {
 .nav-toggle-icon::after {
 	top: 0.4rem;
 }
+
+*/
 
 .nav-links {
 	display: flex;
