@@ -3,6 +3,12 @@ function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 gtag('config', 'G-H4GRHD7XM7');
 
+const currentUrl = new URL(window.location.href);
+if (currentUrl.searchParams.has("_version")) {
+  currentUrl.searchParams.delete("_version");
+  window.history.replaceState(null, "", currentUrl.pathname + currentUrl.search + currentUrl.hash);
+}
+
 const siteVersion = document.querySelector('meta[name="site-version"]')?.content;
 const updateNotice = document.getElementById("updateNotice");
 const refreshForUpdate = document.getElementById("refreshForUpdate");
@@ -68,7 +74,7 @@ if (siteVersion && updateNotice && refreshForUpdate && dismissUpdate) {
   });
 
   checkForUpdates();
-  window.setInterval(checkForUpdates, 2 * 60 * 1000);
+  window.setInterval(checkForUpdates, 0.25 * 60 * 1000);
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "visible") checkForUpdates();
   });
