@@ -82,7 +82,7 @@ footer p {
 	font-weight: bolder;
 	margin-bottom: 1rem;
 	border: 1px solid rgba(0, 255, 204, 0.4);
-	border-radius: 12px;
+	border-radius: 0px 30px 0px 0px;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -199,7 +199,7 @@ footer p {
 	color: #00ffcc;
 	font-size: 1.1rem;
 	border: 2px solid #00ffcc;
-	border-radius: 50px;
+	border-radius: 50px 5px 50px 5px;
 	width: auto;
 	padding: 0.9rem 1.2rem;
 	overflow: hidden;
@@ -530,7 +530,7 @@ summary {
 .game-card {
 	background: #1a1a1a;
 	border: 2px solid #00ffcc;
-	border-radius: 50px;
+	border-radius: 12px 12px 50px 50px;
 	width: 200px;
 	overflow: hidden;
 	transition: transform 0.3s ease;
@@ -587,7 +587,7 @@ summary {
 .uma-card {
 	background: #1a1a1a;
 	border: 4px dotted #00ffcc;
-	border-radius: 50px;
+	border-radius: 5px 50px;
 	width: 200px;
 	overflow: hidden;
 	transition: transform 0.3s ease;
