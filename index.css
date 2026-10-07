@@ -588,7 +588,7 @@ summary {
 	font-weight: 500;
 	background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
 	padding: 0.25rem 0.6rem;
-	border-radius: 9999px;
+	border-radius: 5px 50px 5px 50px;
 	align-self: flex-start;
 }
 
