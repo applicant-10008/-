@@ -428,7 +428,6 @@ summary {
 		transform 0.15s ease,
 		box-shadow 0.15s ease,
 		background-color 0.15s ease;
-	border: 1px solid rgba(255, 255, 255, 0.15);
 	box-shadow: 0 2px 9px rgba(0, 0, 0, 0.25);
 }
 
@@ -500,7 +499,7 @@ summary {
 .game-card {
 	background: #1a1a1a;
 	border: 2px solid #00ffcc;
-border-radius: 16px 16px 52px 52px;
+	border-radius: 16px 16px 52px 52px;
 	width: 200px;
 	overflow: hidden;
 	transition: transform 0.3s ease;
@@ -533,7 +532,7 @@ border-radius: 16px 16px 52px 52px;
 
 .game-info p {
 	font-size: 0.8rem;
-	font-weight:bolder;
+	font-weight: bolder;
 	color: #121212;
 	display: inline-block;
 	background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
@@ -554,8 +553,8 @@ border-radius: 16px 16px 52px 52px;
 
 .uma-card {
 	background: #1a1a1a;
-	border: 4px dotted #00ffcc;
-	border-radius: 8px 40px;
+	border: 2px solid #00ffcc;
+	border-radius: 10px 40px;
 	width: 200px;
 	overflow: hidden;
 	transition: transform 0.3s ease;
@@ -587,8 +586,8 @@ border-radius: 16px 16px 52px 52px;
 
 .uma-info p {
 	font-size: 0.8rem;
-	font-weight:bolder;
-	font-style:oblique;
+	font-weight: bolder;
+	font-style: oblique;
 	color: #ededed;
 	display: inline-block;
 	background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
