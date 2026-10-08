@@ -56,6 +56,12 @@ p {
 	line-height: 1.8;
 }
 
+summary:focus-visible {
+	outline: 5px solid #f6e074;
+	outline-offset: 5px;
+	border-radius: 3px;
+}
+
 iframe {
 	margin: 1rem 0;
 }
@@ -209,6 +215,10 @@ footer p {
 	box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
 }
 
+.spotify-load-btn:focus-visible {
+	outline: 5px solid #f6e074;
+	outline-offset: 5px;
+}
 
 .footer-subtitle {
 	margin: 0 0 1rem;
@@ -279,8 +289,8 @@ footer p {
 }
 
 .nav-toggle:focus-visible {
-	outline: 3px solid #f6e074;
-	outline-offset: 2px;
+	outline: 5px solid #f6e074;
+	outline-offset: 5px;
 }
 
 .nav-links {
@@ -352,8 +362,8 @@ footer p {
 }
 
 .section-inner a:focus-visible {
-	outline: 3px solid #f6e074;
-	outline-offset: 2px;
+	outline: 5px solid #f6e074;
+	outline-offset: 5px;
 }
 
 body.nav-collapsed {
@@ -429,6 +439,11 @@ summary {
 		box-shadow 0.15s ease,
 		background-color 0.15s ease;
 	box-shadow: 0 2px 9px rgba(0, 0, 0, 0.25);
+}
+
+.social-link:focus-visible {
+	outline: 5px solid #f6e074;
+	outline-offset: 5px;
 }
 
 .social-link:hover {
