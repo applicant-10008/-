@@ -669,7 +669,10 @@ summary {
 		display: none;
 	}
 
-
+	#mobile-hidden {
+		display: none;
+	}
+	
 	.section-inner.is-collapsed {
 		width: 100%;
 	}
