@@ -208,11 +208,11 @@ footer p {
 	overflow: hidden;
 	transition: transform 0.3s ease;
 	cursor: pointer;
+	box-shadow: 1px 6px 8px #30cfd0, 3px 18px 32px #330867;
 }
 
 .spotify-load-btn:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
+	transform: translateY(-10px);
 }
 
 .spotify-load-btn:focus-visible {
@@ -518,11 +518,11 @@ summary {
 	width: 200px;
 	overflow: hidden;
 	transition: transform 0.3s ease;
+	box-shadow: 1px 6px 8px #00C9ff, 1px 6px 16px #92FE9D;
 }
 
 .game-card:hover {
 	transform: translateY(-5px);
-	box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
 }
 
 .game-card img {
@@ -573,11 +573,11 @@ summary {
 	width: 200px;
 	overflow: hidden;
 	transition: transform 0.3s ease;
+	box-shadow: 1px 6px 8px #d43f8d, 1px 6px 16px #0250c5;
 }
 
 .uma-card:hover {
 	transform: translateY(-5px);
-	box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
 }
 
 .uma-card img {
