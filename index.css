@@ -525,6 +525,11 @@ summary {
 	transform: translateY(-5px);
 }
 
+.game-card:focus-visible {
+	outline: 5px solid #f6e074;
+	outline-offset: 5px;
+}
+
 .game-card img {
 	width: 187.5px;
 	height: 350px;
@@ -578,6 +583,11 @@ summary {
 
 .uma-card:hover {
 	transform: translateY(-5px);
+}
+
+.uma-card:focus-visible {
+	outline: 5px solid #f6e074;
+	outline-offset: 5px;
 }
 
 .uma-card img {
