@@ -97,20 +97,19 @@ footer p {
 	z-index: 99;
 	border: none;
 	outline: none;
-	background-color: rgba(189, 219, 250, 0.63);
+	background:linear-gradient(115deg, #0f172a, #1c2526, #00d4ff17, #00ffab52);
 	color: white;
 	cursor: pointer;
-	padding: 15px 20px;
-	border-radius: 50%;
+	padding: 20px 20px;
+	border-radius: 50px;
 	font-size: 20px;
-	box-shadow: 0 4px 10px rgba(189, 219, 250, 0.63);
 	transition: all 0.3s ease;
 	z-index: 20;
 }
 
 #backToTopBtn:hover {
 	background-color: rgba(0, 255, 204, 0.4);
-	transform: translateY(-3px);
+	transform: translateY(-6px);
 }
 
 /* Update Notice Styles */
@@ -126,11 +125,12 @@ footer p {
 	justify-content: space-between;
 	gap: 1rem;
 	padding: 0.75rem 1rem;
-	background: #1c2526;
-	border: 1px solid #00d4ff;
+	background: linear-gradient(115deg, #0f172a, #1c2526, #00d4ff, #00ffab);
+	border: 3px solid #00d4ff;
 	border-radius: 10px;
 	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 	z-index: 30;
+	overflow: auto;
 }
 
 .update-notice[hidden] {
@@ -148,7 +148,7 @@ footer p {
 	padding: 0.5rem 0.75rem;
 	color: #00d4ff;
 	background: #121212;
-	border: 1px solid rgba(255, 255, 255, 0.25);
+	border: 3px solid rgba(255, 255, 255, 0.25);
 	border-radius: 8px;
 	cursor: pointer;
 }
@@ -165,7 +165,7 @@ footer p {
 
 .update-notice #dismissUpdate {
 	width: 2.75rem;
-	padding: 0;
+	padding: 0.5rem 0.75rem;
 	font-size: 1.25rem;
 }
 
