@@ -97,7 +97,7 @@ footer p {
 	z-index: 99;
 	border: none;
 	outline: none;
-	background:linear-gradient(115deg, #0f172a, #1c2526, #00d4ff17, #00ffab52);
+	background:linear-gradient(115deg, #0f172a, #1c2526, #00d4ff, #00ffab);
 	color: white;
 	cursor: pointer;
 	padding: 20px 20px;
