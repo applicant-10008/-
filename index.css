@@ -89,6 +89,8 @@ footer p {
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* back to the top button */
+
 #backToTopBtn {
 	display: none;
 	position: fixed;
