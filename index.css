@@ -350,8 +350,8 @@ footer p {
 	color: #00d4ff;
 	text-decoration: none;
 	font-weight: bold;
-	border: 1px solid rgba(0, 212, 255, 0.25);
-	border-radius: 20px 45px 45px 20px;
+	border: 1px solid rgba(0, 212, 255, 0.9);
+	border-radius: 999px;
 	transition:
 		background-color 0.3s ease,
 		color 0.3s ease,
