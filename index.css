@@ -361,10 +361,64 @@ body.nav-collapsed {
     border-radius: 8px 40px;
 }
 
+/*Summary & Details*/
+
+
+details {
+    border: 2px solid #00ffcc;
+    padding: 0 1rem;
+    border-radius: 50px 5px 50px 5px;
+}
+
+details+details {
+    border-top: none;
+}
+
+details[open] {
+    padding-bottom: 1em;
+}
+
+summary {
+    padding: 1rem 2em 1rem 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+summary::marker {
+    content: none;
+}
+
+summary::before,
+summary::after {
+    content: '';
+}
+
+summary::before,
+summary::after {
+    width: .75em;
+    height: 0;
+    border-bottom: 2px solid;
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+    transform: translateY(-50%);
+}
+
+summary::after {
+    transform: rotate(90deg);
+    transform-origin: 50% 50%;
+}
+
+[open] summary::after {
+    transform: rotate(0deg);
+}
+
 /* Spotify embeds */
 
 .spotify-embeds {
-    display: grid;
+    display: flex;
     gap: 1.5rem;
     list-style-type: none;
     padding: 0;
