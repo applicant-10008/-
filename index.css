@@ -731,6 +731,13 @@ footer p {
         overflow-wrap: anywhere;
     }
 
+    .spotify-embeds {
+        display: grid;
+        gap: 1.5rem;
+        list-style-type: none;
+        padding: 0;
+    }
+
     main {
         padding: 1rem;
     }
