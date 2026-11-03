@@ -463,7 +463,7 @@ summary::after {
 footer {
     text-align: center;
     padding: 2rem 1rem;
-    background: linear-gradient(1, #00ffab52, transparent);
+	background-color: linear-gradient(#00ffab52);
     color: #ffffff;
 }
 
