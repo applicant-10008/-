@@ -317,11 +317,44 @@ body.nav-collapsed {
 .uma-card {
     background: #1a1a1a;
     border: 2px solid #00ffcc;
-    border-radius: 10px 40px;
+    border-radius: 10px 40px 20px 20px;
     width: 200px;
     overflow: hidden;
     transition: transform 0.3s ease;
     box-shadow: 1px 6px 8px #d43f8d, 1px 6px 16px #0250c5;
+}
+
+.uma-details {
+  position: absolute;
+  inset: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1px;
+  background: rgba(15, 23, 42, 0.96);
+  color: #e0e0e0;
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.7s ease, visibility 0.2s ease;
+}
+
+.uma-details p{
+    font-weight: bolder;
+}
+.uma-details h2 {
+    color: #ccf15e;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    border-bottom: none;
+}
+
+.uma-card:hover .uma-details,
+.uma-card:focus-within .uma-details {
+  opacity: 0.93;
+  visibility: visible;
 }
 
 .uma-card:hover {
