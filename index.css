@@ -395,16 +395,28 @@ body.nav-collapsed {
     border-radius: 8px 40px;
 }
 
-/*Summary & Details*/
-
+/* Summary & Details */
 
 details {
+    interpolate-size: allow-keywords;
     border: 2px solid #00ffcc;
     padding: 0 1rem;
     border-radius: 80px 15px 15px 15px;
 }
 
-details+details {
+details::details-content {
+    block-size: 0;
+    overflow: clip;
+    transition:
+        block-size 0.35s ease,
+        content-visibility 0.35s allow-discrete;
+}
+
+details[open]::details-content {
+    block-size: auto;
+}
+
+details + details {
     border-top: none;
 }
 
@@ -427,10 +439,6 @@ summary::marker {
 summary::before,
 summary::after {
     content: '';
-}
-
-summary::before,
-summary::after {
     width: 1.25rem;
     height: 0;
     border-bottom: 2.5px solid;
@@ -443,6 +451,7 @@ summary::after {
 summary::after {
     transform: rotate(90deg);
     transform-origin: 50% 50%;
+    transition: transform 0.35s ease;
 }
 
 [open] summary::after {
