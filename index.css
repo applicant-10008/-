@@ -333,6 +333,7 @@ body.nav-collapsed {
     overflow: hidden;
     transition: transform 0.3s ease;
     box-shadow: 1px 6px 8px #d43f8d, 1px 6px 16px #0250c5;
+    cursor: none;
 }
 
 .uma-details {
@@ -349,6 +350,7 @@ body.nav-collapsed {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.7s ease, visibility 0.2s ease;
+    cursor: none;
 }
 
 .uma-details h4 {
