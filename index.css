@@ -259,13 +259,15 @@ body.nav-collapsed {
 }
 
 .game-card {
+    position: relative;
     background: #1a1a1a;
     border: 2px solid #00ffcc;
-    border-radius: 16px 16px 52px 52px;
+    border-radius: 16px 16px 42px 42px;
     width: 200px;
     overflow: hidden;
     transition: transform 0.3s ease;
     box-shadow: 1px 6px 8px #00C9ff, 1px 6px 16px #92FE9D;
+    cursor: none;
 }
 
 .game-card:hover {
@@ -303,6 +305,50 @@ body.nav-collapsed {
     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
     padding: 0.25rem 0.6rem;
     border-radius: 16px 16px 52px 52px;
+}
+
+.game-details {
+    position: absolute;
+    inset: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background: rgba(15, 23, 42, 0.96);
+    color: #e0e0e0;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.game-details h4 {
+    margin: 0 0 0.75rem;
+    color: #ccf15e;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.game-details p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.game-details img {
+    width: 187.5px;
+    height: 350px;
+    align-items: center;
+}
+
+.game-details strong {
+    color: #ccf15e;
+}
+
+.game-card:hover .game-details,
+.game-card:focus .game-details {
+    opacity: 0.96;
+    visibility: visible;
 }
 
 /* Favorite Umamusume */
