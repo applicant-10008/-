@@ -17,6 +17,7 @@ body {
 
 body {
     padding-left: 14rem;
+    transition: padding-left 0.5s ease;
 }
 
 header {
@@ -136,6 +137,7 @@ iframe {
     z-index: 15;
     border-right: 2.5px solid #00d4ff;
     border-radius: 0 12px 12px 0;
+    transition: width 0.5s ease;
 }
 
 .nav-toggle {
@@ -167,6 +169,7 @@ iframe {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    border-radius: 99px;
 }
 
 .section-inner.is-collapsed {
@@ -179,8 +182,9 @@ iframe {
 
 .section-inner.is-collapsed .nav-links a {
     justify-content: center;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-radius: 99px;
 }
 
 .nav-icon {
@@ -201,10 +205,6 @@ iframe {
     -webkit-font-smoothing: antialiased;
 }
 
-.nav-label {
-    white-space: nowrap;
-}
-
 .section-inner a {
     box-sizing: border-box;
     display: flex;
@@ -215,7 +215,7 @@ iframe {
     text-decoration: none;
     font-weight: bold;
     border: 1px solid rgba(0, 212, 255, 0.9);
-    border-radius: 999px;
+    border-radius: 99px;
     transition:
         background-color 0.3s ease,
         color 0.3s ease,
@@ -234,6 +234,7 @@ iframe {
 
 body.nav-collapsed {
     padding-left: 4.5rem;
+    transition: padding-left 0.5s ease;
 }
 
 /* Biography */
@@ -314,6 +315,16 @@ body.nav-collapsed {
     margin-top: 20px;
 }
 
+.sub-title {
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    padding: 1rem 1.2rem;
+    border: 1px solid rgba(0, 255, 204, 0.4);
+    border-radius: 80px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
 .uma-card {
     background: #1a1a1a;
     border: 2px solid #00ffcc;
@@ -338,10 +349,6 @@ body.nav-collapsed {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.7s ease, visibility 0.2s ease;
-}
-
-.uma-details p {
-    font-weight: bolder;
 }
 
 .uma-details h4 {
@@ -733,7 +740,7 @@ footer p {
     .section-inner a {
         flex: 0 0 auto;
         min-height: 2.75rem;
-        border-radius: 12px;
+        border-radius: 99px;
         border: 0.5px solid;
     }
 
