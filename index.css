@@ -318,6 +318,7 @@ body.nav-collapsed {
     background: rgba(15, 23, 42, 0.96);
     color: #e0e0e0;
     text-align: left;
+    align-items: center;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -333,6 +334,7 @@ body.nav-collapsed {
 .game-details p {
     margin: 0.5rem 0;
     font-size: 0.9rem;
+    text-align: center;
 }
 
 .game-details img {
@@ -472,10 +474,6 @@ details[open]::details-content {
     block-size: auto;
 }
 
-details + details {
-    border-top: none;
-}
-
 details[open] {
     padding-bottom: 1em;
 }
@@ -562,7 +560,6 @@ summary::after {
 footer {
     text-align: center;
     padding: 2rem 1rem;
-    background-color: linear-gradient(#00ffab52);
     color: #ffffff;
 }
 

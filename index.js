@@ -74,7 +74,7 @@ if (siteVersion && updateNotice && refreshForUpdate && dismissUpdate) {
   });
 
   checkForUpdates();
-  window.setInterval(checkForUpdates, 0.08 * 60 * 1000);
+  window.setInterval(checkForUpdates, 0.167 * 60 * 1000);
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "visible") checkForUpdates();
   });
