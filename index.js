@@ -3,6 +3,59 @@ function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 gtag('config', 'G-H4GRHD7XM7');
 
+// remove the under
+
+const themeToggle = document.getElementById("themeToggle");
+const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+
+if (themeToggle) {
+  let theme = "dark";
+
+  try {
+    const savedTheme = window.localStorage.getItem("theme");
+    if (savedTheme === "light" || savedTheme === "dark") theme = savedTheme;
+  } catch (error) {
+    console.warn("Unable to load the saved theme preference.", error);
+  }
+
+  const applyTheme = (nextTheme, savePreference = false) => {
+    document.documentElement.dataset.theme = nextTheme;
+
+    const targetTheme = nextTheme === "dark" ? "light" : "dark";
+    const label = `Switch to ${targetTheme} theme`;
+    themeToggle.setAttribute("aria-label", label);
+    themeToggle.title = label;
+
+    const icon = themeToggle.querySelector(".nav-icon");
+    if (icon) icon.textContent = nextTheme === "dark" ? "light_mode" : "dark_mode";
+
+    const text = themeToggle.querySelector(".nav-label");
+    if (text) text.textContent = `${targetTheme === "light" ? "Light" : "Dark"} theme`;
+
+    themeColorMeta?.setAttribute(
+      "content",
+      nextTheme === "dark" ? "#1C2526" : "#f5faf9"
+    );
+
+    if (savePreference) {
+      try {
+        window.localStorage.setItem("theme", nextTheme);
+      } catch (error) {
+        console.warn("Unable to save the theme preference.", error);
+      }
+    }
+  };
+
+  applyTheme(theme);
+
+  themeToggle.addEventListener("click", () => {
+    const currentTheme = document.documentElement.dataset.theme;
+    applyTheme(currentTheme === "dark" ? "light" : "dark", true);
+  });
+}
+
+// Remove the above
+
 const currentUrl = new URL(window.location.href);
 if (currentUrl.searchParams.has("_version")) {
   currentUrl.searchParams.delete("_version");

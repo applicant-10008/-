@@ -853,3 +853,156 @@ footer p {
         font-size: 1.3rem;
     }
 }
+
+
+
+
+.theme-toggle {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    min-height: 2.75rem;
+    padding: 0.65rem 0.75rem;
+    color: #00d4ff;
+    background: transparent;
+    border: 1px solid rgba(0, 212, 255, 0.9);
+    border-radius: 99px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: #00d4ff;
+    color: #121212;
+}
+
+.theme-toggle:focus-visible {
+    outline: 5px solid #f6e074;
+    outline-offset: 5px;
+}
+
+.section-inner.is-collapsed .theme-toggle {
+    justify-content: center;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+@media (max-width: 900px) {
+    .theme-toggle {
+        flex: 0 0 auto;
+    }
+}
+
+html[data-theme="light"] {
+    color-scheme: light;
+    background: #f5faf9;
+}
+
+html[data-theme="light"] body {
+    background: linear-gradient(115deg, #eef2f8, #f5faf9, #e5f8ff, #effcf4);
+    color: #263238;
+}
+
+[data-theme="light"] header {
+    background: linear-gradient(180deg, #dce8f6, transparent);
+}
+
+[data-theme="light"] h1,
+[data-theme="light"] .profile-name,
+[data-theme="light"] .section-inner a,
+[data-theme="light"] .theme-toggle {
+    color: #006f87;
+}
+
+[data-theme="light"] h2 {
+    color: #00785f;
+    border-color: rgba(0, 120, 95, 0.55);
+}
+
+[data-theme="light"] h3,
+[data-theme="light"] .game-details h4,
+[data-theme="light"] .game-details strong,
+[data-theme="light"] .uma-details h4 {
+    color: #765400;
+}
+
+[data-theme="light"] p,
+[data-theme="light"] .game-details,
+[data-theme="light"] .uma-details,
+[data-theme="light"] .spotify-placeholder {
+    color: #263238;
+}
+
+[data-theme="light"] .profile-role,
+[data-theme="light"] .footer-subtitle {
+    color: #505b60;
+}
+
+[data-theme="light"] .profile-card {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-color: rgba(20, 50, 60, 0.18);
+}
+
+[data-theme="light"] .section-inner {
+    border-color: #006f87;
+}
+
+[data-theme="light"] .section-inner a,
+[data-theme="light"] .theme-toggle {
+    border-color: #006f87;
+}
+
+[data-theme="light"] .section-inner a:hover,
+[data-theme="light"] .theme-toggle:hover,
+[data-theme="light"] .nav-toggle:hover {
+    background-color: #006f87;
+    color: #ffffff;
+}
+
+[data-theme="light"] .nav-toggle {
+    color: #006f87;
+    border-color: rgba(20, 50, 60, 0.25);
+}
+
+[data-theme="light"] #biography p,
+[data-theme="light"] .sub-title,
+[data-theme="light"] details {
+    border-color: rgba(0, 122, 112, 0.45);
+}
+
+[data-theme="light"] .game-card,
+[data-theme="light"] .uma-card {
+    background: #ffffff;
+    border-color: #007a70;
+}
+
+[data-theme="light"] .game-details,
+[data-theme="light"] .uma-details {
+    background: rgba(245, 249, 250, 0.97);
+}
+
+[data-theme="light"] footer {
+    color: #263238;
+}
+
+[data-theme="light"] .section-inner {
+    background-color: #f8fbfc;
+}
+
+[data-theme="light"] .update-notice {
+    background: #ffffff;
+    color: #263238;
+    border-color: #006f87;
+}
+
+[data-theme="light"] .update-notice button {
+    color: #006f87;
+    background: #f5faf9;
+}
+
+[data-theme="light"] .update-notice button:hover {
+    color: #ffffff;
+    background: #006f87;
+}
